@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b315910df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav>
+        <a href="index.html#header">
+            <img src="images/logo.png" class="logo" alt="Logo">
+        </a>
+        <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.htmlpost.html">Posts</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>    
+
+    <div id="posts">
+        <h1>Recent Posts</h1>
+        <p>Explore my latest work and thoughts on AI, machine learning, and technology. Each post dives deep into innovative solutions and cutting-edge research.</p>
+        
+        <div class="post-list">
+            <div class="post">
+                <img src="images/sample1.jpg" alt="Sample Post">
+                <h3><a href="post1.html">Sample Post 1</a></h3>
+                <p>An in-depth analysis of machine learning models for classification tasks.</p>
+                <div class="read-more">
+                    <a href="post1.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample2.jpg" alt="Sample Post">
+                <h3><a href="post2.html">Sample Post 2</a></h3>
+                <p>Understanding deep learning architectures and how to improve model performance.</p>
+                <div class="read-more">
+                    <a href="post2.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample3.jpg" alt="Sample Post">
+                <h3><a href="post3.html">Sample Post 3</a></h3>
+                <p>Challenges and breakthroughs in Natural Language Processing (NLP).</p>
+                <div class="read-more">
+                    <a href="post3.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample4.jpg" alt="Sample Post">
+                <h3><a href="post4.html">Sample Post 4</a></h3>
+                <p>Exploring the impact of AI on healthcare and diagnosis systems.</p>
+                <div class="read-more">
+                    <a href="post4.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample5.jpg" alt="Sample Post">
+                <h3><a href="post5.html">Sample Post 5</a></h3>
+                <p>Using computer vision to automate complex tasks and improve accuracy.</p>
+                <div class="read-more">
+                    <a href="post5.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample6.jpg" alt="Sample Post">
+                <h3><a href="post6.html">Sample Post 6</a></h3>
+                <p>A beginner-friendly guide to training deep neural networks.</p>
+                <div class="read-more">
+                    <a href="post6.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample7.jpg" alt="Sample Post">
+                <h3><a href="post7.html">Sample Post 7</a></h3>
+                <p>Insights on the latest AI trends and emerging technologies.</p>
+                <div class="read-more">
+                    <a href="post7.html">Read More</a>
+                </div>
+            </div>
+            <div class="post">
+                <img src="images/sample8.jpg" alt="Sample Post">
+                <h3><a href="post8.html">Sample Post 8</a></h3>
+                <p>Enhancing model accuracy using advanced feature extraction techniques.</p>
+                <div class="read-more">
+                    <a href="post8.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright @ Rajan Thakulla <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

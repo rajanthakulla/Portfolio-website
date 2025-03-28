@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b315910df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="post.html">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI Engineer</p>
+                <h1>Hi, I'm <span>Rajan</span><br>Thakulla from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about--------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a Computer Science Engineering student at the National Institute of Technology Rourkela
+                        (NITR), Class of 2026, I am deeply passionate about the fields of machine learning and deep
+                        learning. My journey into the world of artificial intelligence has been fueled by a desire to
+                        harness the power of data to solve complex problems and drive innovative solutions.
+                        <br>
+                        I am always eager to learn and grow, seeking opportunities to apply my skills in real-world
+                        scenarios. I am particularly interested in internships, collaborative projects, and research
+                        opportunities that align with my passion for AI and data science.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Research-Experience')">Research Experience</p>
+                        <p class="tab-links" onclick="opentab('Non-Research-Experience')">Non Research Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Build Model</li>
+                            <li><span>Deep Learning</span><br>Build Model</li>
+                            <li><span>Computer Vision</span><br>Build Model</li>
+                            <li><span>Natural Language Processing</span><br>Build Model</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Research-Experience">
+                        <ul>
+                            <li><span>Dec 2024 - Jan 2025</span><br>Winter Research Internship at IIT Bhubaneshwar on
+                                LLM for travel recomendation system backed by Microsoft.</li>
+                            <li><span>May 2024 - July 2024</span><br>Summer Research Internship at IITRAM Ahmedabad on
+                                classification of Hypertension and its stages using CNN.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Non-Research-Experience">
+                        <ul>
+                            <li><span>Feb 2025 - Mar 2025</span><br>Worked as an Organizing Core Team member
+                                (Accomodation Team) in NITR Model United nation 2025. </li>
+                            <li><span>Oct 2024 - Nov 2024</span><br>Worked as an Organizing Core Team member (Guest
+                                Lecture Team) in INNOVISION 2025 which is the leargest college Tech fest in Odisha.</li>
+                            <li><span>Dec 2024 - Jan 2025</span><br>Worked as a Coordinator (Sponsorship Team) in
+                                INNOVISION 2024 which is the leargest college Tech fest in Odisha.</li>
+                            <li><span>Dec 2024 - Jan 2025</span><br>Worked as a Coordinator (Guest Lecture Team) in
+                                NITRUTSAV 2024 which is one of the leargest Cultural fest in Odisha.</li>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>National Institue of Technology Rourkela, Odisha [2022 - 2026]</span><br>B.Tech in
+                                Computer Science and Engineering</li>
+                            <li><span>SSMRV PU College, Bengalore, Karnataka [2020 - 2022]</span><br>Pre University
+                                College in PCMCS</li>
+                            <li><span>Babylon National School, Kathmandu, Nepal [2017 - 2020]</span><br>Seconday Level
+                                Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services--------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I design and develop machine learning models to analyze complex datasets, extract meaningful
+                        insights, and automate decision-making processes. My expertise includes regression,
+                        classification, clustering, and reinforcement learning for real-world applications.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Deep Learning</h2>
+                    <p>I build deep learning architectures such as CNNs, RNNs, and Transformers to solve advanced AI
+                        challenges. From image recognition to speech processing, I leverage neural networks to create
+                        intelligent and efficient solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>NLP</h2>
+                    <p>I specialize in NLP techniques, including text classification, sentiment analysis, named entity
+                        recognition, and language modeling. By leveraging transformer-based models like BERT and GPT, I
+                        create applications for chatbot development, document summarization, and automated translation.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Computer Vision</h2>
+                    <p>I develop computer vision solutions for image processing, object detection, and facial
+                        recognition. Using frameworks like OpenCV and TensorFlow, I work on tasks such as medical
+                        imaging analysis, autonomous navigation, and real-time surveillance systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------My work------------------------------------------------------------- -->
+
+    <!-- ---------------My Work--------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Hypertension Stages Classification</h3>
+                        <p>Classifies hypertension stages using CNN.</p>
+                        <a
+                            href="https://github.com/rajanthakulla/classification-of-hypertension-and-its-stages-using-ppg-signals"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Stock Market Prediction</h3>
+                        <p>Predicts stock trends using LSTM.</p>
+                        <a href="https://github.com/rajanthakulla/STock-market-prediction-using-LSTM"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Nano GPT</h3>
+                        <p>Mini GPT model for text generation.</p>
+                        <a href="https://github.com/rajanthakulla/Mini-ChatGpt"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png" alt="">
+                    <div class="layer">
+                        <h3>Personalized movie recommender system </h3>
+                        <p>This </p>
+                        <a href="https://github.com/rajanthakulla/Movie-Recommendation-System"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/rajanthakulla" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------contact---------------------------------------------- -->
+
+    <div id="contact">
+        <div class="class">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rajan102805@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7676820187</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/thakulla.xx/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rajan-thakulla-151019202/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/thakulla.xx/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/thakulla_rajan"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Rajan Thakulla - CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Rajan Thakulla <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw9PHPPqTjdRg-G6KcAacKwoTgf_60TcYLs0GQy5CfXEIS_haBlHw7n1EZGoVXDBjNe/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")  // Fixed typo here
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
