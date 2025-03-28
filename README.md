@@ -38,4 +38,4 @@ This is a personal portfolio website that showcases my projects, skills, and exp
 3. Enable GitHub Pages in the repository settings.
 
 ## Contact
-For any inquiries, please contact me via [your email].
+For any inquiries, please contact me via rajan102805@gmail.com.
